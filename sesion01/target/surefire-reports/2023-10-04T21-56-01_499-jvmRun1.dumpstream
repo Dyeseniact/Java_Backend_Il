@@ -1,0 +1,61 @@
+# Created at 2023-10-04T21:56:04.382
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-10-04T21:56:05.083
+Unexpected IOException with stream: 2023-10-04 21:56:05.082  INFO 4233 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+
+# Created at 2023-10-04T21:56:05.448
+Unexpected IOException with stream: 2023-10-04 21:56:05.448  INFO 4233 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+
+# Created at 2023-10-04T21:56:05.523
+Unexpected IOException with stream: 2023-10-04 21:56:05.522  INFO 4233 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+
+
+# Created at 2023-10-04T21:56:05.570
+Unexpected IOException with stream: 2023-10-04 21:56:05.569  INFO 4233 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+
+
+# Created at 2023-10-04T21:56:05.821
+Unexpected IOException with stream: 2023-10-04 21:56:05.820  INFO 4233 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+
+
+# Created at 2023-10-04T21:56:05.929
+Unexpected IOException with stream: 2023-10-04 21:56:05.929  INFO 4233 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+# Created at 2023-10-04T21:56:06.341
+Unexpected IOException with stream: 2023-10-04 21:56:06.340  INFO 4233 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+# Created at 2023-10-04T21:56:06.351
+Unexpected IOException with stream: 2023-10-04 21:56:06.351  INFO 4233 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2023-10-04T21:56:06.686
+Unexpected IOException with stream: 2023-10-04 21:56:06.685  WARN 4233 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2023-10-04T21:56:08.114
+Unexpected IOException with stream: 2023-10-04 21:56:08.112  INFO 4233 --- [           main] o.b.j.e.e.e.p.EquipoRepositoryTest       : Started EquipoRepositoryTest in 5.18 seconds (JVM running for 6.327)
+
+
+# Created at 2023-10-04T21:56:08.115
+Unexpected IOException with stream: 2023-10-04 21:56:08.113  INFO 4233 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2023-10-04T21:56:08.119
+Unexpected IOException with stream: 2023-10-04 21:56:08.119  INFO 4233 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+
+# Created at 2023-10-04T21:56:08.146
+Unexpected IOException with stream: 2023-10-04 21:56:08.142  INFO 4233 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+
