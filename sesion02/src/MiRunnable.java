@@ -3,6 +3,7 @@ import java.util.concurrent.TimeUnit;
 public class MiRunnable implements Runnable {
     private String parametro, nombre;
 
+
     public MiRunnable(String nombre) {
         this.nombre = nombre;
     }

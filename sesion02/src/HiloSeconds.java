@@ -1,6 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
-public class HiloSeconds extends Thread {
+public class HiloSeconds implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i <= 10; i++) {

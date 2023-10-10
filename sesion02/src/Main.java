@@ -11,6 +11,7 @@ public class Main {
         hilo1.setParametro("terminar"); // Demostrar qué pasa si no se pone esta línea
         System.out.println("**Fin del hilo main**"); */
 
+        //Reto 01 //
         /*HiloSeconds h1 = new HiloSeconds();
         HiloDaemon h2 = new HiloDaemon();
         h2.setDaemon(true);
@@ -19,7 +20,7 @@ public class Main {
         h2.start();*/
 
         //-- Ejemplo 2-- //
-        MiRunnable runnable1 = new MiRunnable("Uno");
+        /*MiRunnable runnable1 = new MiRunnable("Uno");
         MiRunnable runnable2 = new MiRunnable("Dos");
 
         Thread t1 = new Thread(runnable1);
@@ -33,7 +34,15 @@ public class Main {
         runnable1.setParametro("Terminar");
         System.out.println("----------------------------------");
         System.out.println("Fin del hilo main");
-        System.out.println("----------------------------------");
+        System.out.println("----------------------------------");*/
+
+
+        // Reto 02 ///
+        Thread hilo1 = new Thread(new HiloSeconds());
+        Thread hilo2 = new Thread(new HiloDaemon());
+        hilo2.setDaemon(true);
+        hilo1.start();
+        hilo2.start();
     }
 
 

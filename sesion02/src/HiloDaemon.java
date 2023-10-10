@@ -1,6 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
-public class HiloDaemon extends Thread {
+public class HiloDaemon implements Runnable {
     @Override
     public void run() {
         while(true){
