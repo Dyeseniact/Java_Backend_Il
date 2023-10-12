@@ -1,5 +1,7 @@
 package org.bedu.jse2.demo.ejemplos;
 
+import java.util.function.Function;
+
 public class Ejemplo1 {
 //    Con función anonima
 //    private final StringToInteger parser = new StringToInteger() {
@@ -14,7 +16,13 @@ public class Ejemplo1 {
 
     //    Lambda con metodo de referencia
     private final StringToInteger parser = Integer::parseInt;
-    Integer sumar(String a, String b){
+    /*Integer sumar(String a, String b){
         return parser.convertir(a) + parser.convertir(b);
+    }*/
+
+    // Reto 01 ---
+    private final Function<String, Integer> parser2 = Integer::parseInt;
+    Integer sumar(String a , String b) {
+        return parser2.apply(a) * parser2.apply(b);
     }
 }
