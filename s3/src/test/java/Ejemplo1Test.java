@@ -1,6 +1,4 @@
-package org.bedu.jse2.demo.ejemplos;
-
-
+import org.bedu.jse2.demo.ejemplos.Ejemplo1;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

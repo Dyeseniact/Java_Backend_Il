@@ -22,7 +22,7 @@ public class Ejemplo1 {
 
     // Reto 01 ---
     private final Function<String, Integer> parser2 = Integer::parseInt;
-    Integer sumar(String a , String b) {
+    public Integer sumar(String a, String b) {
         return parser2.apply(a) * parser2.apply(b);
     }
 }
