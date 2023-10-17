@@ -25,6 +25,7 @@ public class E2 {
 
     }
 
+
     static void obtenerPromedio(List<CompletableFuture<Double>> futuros){
         LocalTime inicio = LocalTime.now();
         double promedio = futuros.stream()
