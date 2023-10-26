@@ -1,4 +1,4 @@
-package com.example.s7.4;
+package com.example.s74;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

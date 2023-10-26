@@ -1,4 +1,4 @@
-package com.example.s7.4;
+package com.example.s74;
 
 import jakarta.inject.Singleton;
 import jakarta.ws.rs.GET;
