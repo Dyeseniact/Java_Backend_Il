@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
+import com.example.demo.entity.Checador;
 import com.example.demo.entity.Empleado;
 import com.example.demo.entity.Historial;
+import com.example.demo.repository.ChecadorRepository;
 import com.example.demo.repository.EmpleadoRepository;
 import com.example.demo.repository.HistorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,8 @@ public class DemoController {
 
     @Autowired
     private HistorialRepository historialRepository;
+    @Autowired
+    private ChecadorRepository checadorRepository;
 
     @GetMapping("/{id}")
     private Mono<Empleado> getEmpleadoById(@PathVariable String id) {
@@ -95,6 +99,21 @@ public class DemoController {
         return historialRepository.findById(id)
                 .switchIfEmpty(Mono.error(new Exception("El historial no existe")))
                 .flatMap(historialRepository::delete);
+    }
+
+    @PostMapping("/checador")
+    public Mono<Checador> checador(@RequestBody Checador checador){
+        return empleadoRepository.findById(checador.getEmpleado().getId())
+                .switchIfEmpty(Mono.error(new Exception("El checador no existe")))
+                .map(fetchedEmpleado -> checador)
+                .flatMap(checadorRepository::save);
+
+
+    }
+
+    @GetMapping("/checador/{empleadoId}/{esEntrada}")
+    public Flux<Checador> getRegistrosById(@PathVariable String empleadoId, @PathVariable boolean esEntrada){
+        return checadorRepository.findByEmpleado(empleadoId, esEntrada);
     }
 
 
